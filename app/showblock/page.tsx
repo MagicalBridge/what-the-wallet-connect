@@ -37,6 +37,7 @@ export default function ShowBlock() {
     client.watchBlockNumber({
 
       onBlockNumber: async (blockNumber) => {
+
         if (blockNumber === undefined) {
           setBlockHeight(null);
           return;
